@@ -1,0 +1,136 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link href="~/css/Module_Style.css" rel="stylesheet" />
+@Scripts.Render(@Url.Content("~/bundles/utilityJS"))
+<script src="~/Scripts/Admin/HomeJS.js"></script>
+<script>
+    var EnquireDashboardPageURL = '@Url.Action("EnquiryDashboard", "Enquire")';
+
+    $(document).ready(function () {
+        PMSHome.PageLoad();
+
+    });
+</script>
+<div class="module_row h-100 of_auto" style="overflow-x:hidden">
+    <div class="d-flex flex-column h-100">
+        <div class="flx_1 of_auto">
+            <div class="row h-100 no-gutters">
+                <div class="col-sm-5 module_left of_auto h-100 d-flex align-items-xl-center align-items-start justify-content-center">
+                    <div class="abt_client">
+                        <header class="pt-5 text-center">
+                            <h3 class="text-center">About Client</h3>
+                        </header>
+                        <article class="pt-3 pl-3 pr-4 text-justify">
+                            <p>
+                                We provide the Best Fire and Safety Service. We are guaranteed to serve you at our best. RedDot in Abu Dhabi is an A+ Civil Defense approved firm. We are also in line with the International Standards ISO9001:2007 for Quality Management System, ISO 14001:2004 for Environmental Management System and OHSAS18001:2008 for Occupational Health &amp; Safety Management System.
+                            </p>
+                            <p>
+                                Our team of dedicated &amp; qualified personnel is well equipped to handle all types of firefighting works for multistoried high rise office buildings, residential towers, municipality projects, schools, clusters of luxury villas, labor accommodation buildings, public amenities, courts, hospitals and compound of factories which includes different varieties of simple &amp; complex fire &amp; water pump rooms, water heating, cooling &amp; filtration systems, piping installations and fire suppression systems.
+
+
+                            </p>
+                            <p>
+                                Fire &amp; Safety Services which help to protect your property, life, and all you need. We are here to serve you as per your requirement and commit to following the NFPA and Local Civil Defense standards. Our team will provide you the best service to complete your requirements in Fire &amp; Safety.
+                            </p>
+                            <p>
+
+
+                                Fit-out MEP are small and medium kinds of projects which include retail units, shops, Nursery, Warehouses, Clinic, Temporary site office &amp; Labor camps. We will give you a point solution for all your fit-out needs which will help you to save you time, efficiency and cost. Our commitment to complete your requirements at a specific time.
+                            </p>
+                            <p>
+
+                                Maintains your property with hassle-free and cost-effectively as per NFPA and Local Civil Defense Standard which will keep you Fire Protection system active during the emergency. Our members are well trained and available to serve you at your emergency situation, We are providing the AMC with Spare parts, AMC without Spare parts, Online AMC Contract as per Civil defense requirements.
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+                <div class="col-sm-7 bg-white module_right of_auto h-100">
+                    <div class="d-flex flex-column h-100">
+                        <div class="flx_1 p-2 d-flex align-items-xl-center align-items-start justify-content-center of_auto">
+                            <div class="module_list pt-4">
+                                <ul class="module_li d-flex flex-wrap">
+                                    <li>
+                                        <a href="@Url.Action("EnquiryDashboard","Enquire")">
+                                            <div class="module_info module_info_1 text-center">
+                                                <div class="module_i  d-inline-flex align-items-center justify-content-center">
+                                                    <img src="~/images/enquire.svg" alt="" />
+                                                </div>
+                                                <label class="d-block pt-3">Enquiry</label>
+                                                </div>
+                                        </a>
+                                    </li>
+                                    <li class="disable_panel">
+                                        <div class="module_info module_info_2 text-center">
+                                            <div class="module_i d-inline-flex align-items-center justify-content-center">
+                                                <img src="~/images/projects-management.svg" alt="" />
+                                            </div>
+                                            <label class="d-block pt-3">Project Management</label>
+                                        </div>
+                                    </li>
+                                    <li class="disable_panel">
+                                        <div class="module_info module_info_3 text-center">
+                                            <div class="module_i d-inline-flex align-items-center justify-content-center">
+                                                <img src="~/images/HR.svg" alt="" />
+                                            </div>
+                                            <label class="d-block pt-3">HR</label>
+                                        </div>
+                                    </li>
+                                    <li class="disable_panel">
+                                        <div class="module_info module_info_4 text-center">
+                                            <div class="module_i d-inline-flex align-items-center justify-content-center">
+                                                <img src="~/images/Inventory.svg" alt="" />
+                                            </div>
+                                            <label class="d-block pt-3">Inventory</label>
+                                        </div>
+                                    </li>
+                                    <li class="disable_panel">
+                                        <div class="module_info module_info_5 text-center">
+                                            <div class="module_i d-inline-flex align-items-center justify-content-center">
+                                                <img src="~/images/Accounting.svg" alt="" />
+                                            </div>
+                                            <label class="d-block pt-3">Accounting</label>
+                                        </div>
+                                    </li>
+                                    <li class="disable_panel">
+                                        <div class="module_info module_info_6 text-center">
+                                            <div class="module_i d-inline-flex align-items-center justify-content-center">
+                                                <img src="~/images/admin.svg" alt="" />
+                                            </div>
+                                            <label class="d-block pt-3">Admin</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="flx_0">
+        <footer class="p-1 footer_1 text-white">
+            <div class="w_80">
+                <div class="row">
+                    <div class="col-6">
+                        Midas Copyrights &#64; 2021
+                    </div>
+                    <div class="col-6 text-right">
+                        Version 1.0
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</div>
